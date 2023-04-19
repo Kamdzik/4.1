@@ -27,60 +27,54 @@ int opcja = scaner.nextInt();
    
 
        switch (opcja) {
-      case 1:
            
+        case 1:           
           System.out.println(" podaj imie ");
           String imie = scaner.next();
+           
+           System.out.println(" podaj nazwisko ");
+          String nazwisko = scaner.next();
+           
            System.out.println(" podaj wiek ");
           int wiek = scaner.nextInt();
     
-          try {
-                Service s = new Service();
-                s.addStudent(new Student(imie, wiek));
-                //var students = s.getStudents();
-               
-          //  for(Student current : students) {
-          //      System.out.println(current.ToString());
-            //     }
-              } catch (IOException e) {
-          
-              }
-              
-           
+              try {
+                    Service s = new Service();
+                    s.addStudent(new Student(imie, nazwisko, wiek));
                 
-           
-      break; 
+                     //var students = s.getStudents();
+                     //  for(Student current : students) {
+                     //      System.out.println(current.ToString());
+                     //     }
+                
+                  } catch (IOException e) {
+                  }
+        break; 
 
 
-         case 2:
-
-           try {
-              //  Service s = new Service();
-              //  s.addStudent(new Student(imie, wiek));
-               /// var students = s.getStudents();
-
-              Service s = new Service();
-                var students = s.getStudents();
-            for(Student current : students) {
-               System.out.println(current.ToString());
-                 }
-              } catch (IOException e) {
           
-              }
-
-
-           break;
-
-
+         case 2:
+               try {
+                  //  Service s = new Service();
+                  //  s.addStudent(new Student(imie, wiek));
+                  //  var students = s.getStudents();
+    
+                  Service s = new Service();
+                  var students = s.getStudents();
+                 
+                    for(Student current : students) {
+                       System.out.println(current.ToString());
+                         }
+                      } catch (IOException e) {
+                  
+                    }
+          break;
+  
            
-
-           ////
         case 0:   
-          // system.exit(0);      
+           
+          System.exit(0);      
         break;
     }
-    
- 
-
   }  
 }
