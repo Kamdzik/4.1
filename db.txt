@@ -3,3 +3,5 @@ Janusz 40
 Krzysztof 20
 Janusz 40
 kamil 10
+sebus 1
+rafał 12

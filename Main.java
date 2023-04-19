@@ -15,6 +15,7 @@ class Main {
   public static void main(String[] args) {
    
 System.out.println(" 1 Dodaja studenta ");
+System.out.println(" 2 wyświetl studentów ");
 System.out.println(" 0 Wyjście ");
 System.out.println(" podaj opcje ");
     
@@ -36,11 +37,11 @@ int opcja = scaner.nextInt();
           try {
                 Service s = new Service();
                 s.addStudent(new Student(imie, wiek));
-                var students = s.getStudents();
+                //var students = s.getStudents();
                
-            for(Student current : students) {
-                System.out.println(current.ToString());
-                 }
+          //  for(Student current : students) {
+          //      System.out.println(current.ToString());
+            //     }
               } catch (IOException e) {
           
               }
@@ -49,6 +50,28 @@ int opcja = scaner.nextInt();
                 
            
       break; 
+
+
+         case 2:
+
+           try {
+              //  Service s = new Service();
+              //  s.addStudent(new Student(imie, wiek));
+               /// var students = s.getStudents();
+
+              Service s = new Service();
+                var students = s.getStudents();
+            for(Student current : students) {
+               System.out.println(current.ToString());
+                 }
+              } catch (IOException e) {
+          
+              }
+
+
+           break;
+
+
            
 
            ////
