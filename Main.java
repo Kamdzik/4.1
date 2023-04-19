@@ -48,10 +48,10 @@ int opcja = scaner.nextInt();
            
                 
            
-      break;
+      break; 
            
 
-           //
+           ////
         case 0:   
           // system.exit(0);      
         break;
