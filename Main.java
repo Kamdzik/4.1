@@ -26,21 +26,24 @@ int opcja = scaner.nextInt();
   System.out.println("Wybrana opcja " + opcja);
    
 
-       switch (opcja) {
+       switch (opcja) { // dodawanie studenta imie//nazwisko//wiek/dataurodzenia
            
         case 1:           
           System.out.println(" podaj imie ");
           String imie = scaner.next();
            
-           System.out.println(" podaj nazwisko ");
+          System.out.println(" podaj nazwisko ");
           String nazwisko = scaner.next();
            
-           System.out.println(" podaj wiek ");
+          System.out.println(" podaj wiek ");
           int wiek = scaner.nextInt();
-    
+           
+          System.out.println(" podaj date urodzenia ");
+          String dt_ur = scaner.next();
+           
               try {
                     Service s = new Service();
-                    s.addStudent(new Student(imie, nazwisko, wiek));
+                    s.addStudent(new Student(imie, nazwisko, wiek, dt_ur));
                 
                      //var students = s.getStudents();
                      //  for(Student current : students) {
@@ -53,7 +56,7 @@ int opcja = scaner.nextInt();
 
 
           
-         case 2:
+         case 2: //wyświetlanie wszystkich studentów 
                try {
                   //  Service s = new Service();
                   //  s.addStudent(new Student(imie, wiek));
@@ -68,7 +71,10 @@ int opcja = scaner.nextInt();
                       } catch (IOException e) {
                     }
           break;
-  
+
+
+
+           
            
         case 0:   
            
