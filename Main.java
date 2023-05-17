@@ -14,10 +14,10 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
    
-System.out.println(" 1 Dodaja studenta ");
+System.out.println(" 1 Dodaj studenta ");
 System.out.println(" 2 wyświetl studentów ");
 System.out.println(" 0 Wyjście ");
-System.out.println(" podaj opcje ");
+System.out.println(" podaj wybor ");
     
     
 Scanner scaner = new Scanner(System.in);
@@ -66,7 +66,6 @@ int opcja = scaner.nextInt();
                        System.out.println(current.ToString());
                          }
                       } catch (IOException e) {
-                  
                     }
           break;
   
